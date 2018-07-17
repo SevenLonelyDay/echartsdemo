@@ -4,4 +4,4 @@ nvm use --delete-prefix v8.11.3
 
 npm run build
 
-ngh  --dir dist/echartsdemo -no-silent
+ngh --dir=dist/echartsdemo
