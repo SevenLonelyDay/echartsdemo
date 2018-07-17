@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "echarts": {
+    "echartsdemo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -60,14 +60,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "echarts:build"
+            "browserTarget": "echartsdemo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "echarts:build:production"
+              "browserTarget": "echartsdemo:build:production"
             },
             "hmr": {
-              "browserTarget": "echarts:build:hmr",
+              "browserTarget": "echartsdemo:build:hmr",
               "hmr": true
             }
           }
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "echarts:build"
+            "browserTarget": "echartsdemo:build"
           }
         },
         "test": {
@@ -111,7 +111,7 @@
         }
       }
     },
-    "echarts-e2e": {
+    "echartsdemo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "echarts:serve"
+            "devServerTarget": "echartsdemo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "echarts:serve:production"
+              "devServerTarget": "echartsdemo:serve:production"
             }
           }
         },
@@ -139,7 +139,7 @@
       }
     }
   },
-  "defaultProject": "echarts",
+  "defaultProject": "echartsdemo",
   "schematics": {
     "ng-alain:module": {
       "routing": true,
