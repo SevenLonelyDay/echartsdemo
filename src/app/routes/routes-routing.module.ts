@@ -23,10 +23,11 @@ const routes: Routes = [
     path: '',
     component: LayoutDefaultComponent,
     children: [
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'echartsdemo', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent, data: { title: '仪表盘', titleI18n: 'dashboard' } },
       // 业务子模块
-      // { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' }
+      // echartsdemo模块
+      { path: 'echartsdemo', loadChildren: './echartsdemo/echartsdemo.module#EchartsdemoModule' }
     ]
   },
   // 全屏布局
