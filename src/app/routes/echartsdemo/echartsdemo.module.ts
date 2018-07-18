@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { EchartsdemoRoutingModule } from './echartsdemo-routing.module';
 import { EchartsdemoComponent } from './echartsdemo/echartsdemo.component';
+import { EchartslinkComponent } from './echartslink/echartslink.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { EchartsdemoComponent } from './echartsdemo/echartsdemo.component';
     SharedModule,
     EchartsdemoRoutingModule
   ],
-  declarations: [EchartsdemoComponent]
+  declarations: [EchartsdemoComponent, EchartslinkComponent]
 })
 export class EchartsdemoModule { }
