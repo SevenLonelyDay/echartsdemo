@@ -6,7 +6,7 @@ import { DA_SERVICE_TOKEN, ITokenService } from '@delon/auth';
 @Component({
   selector: 'header-user',
   template: `
-  <nz-dropdown nzPlacement="bottomRight">
+  <nz-dropdown nzTrigger="click" nzPlacement="bottomRight">
     <div class="item d-flex align-items-center px-sm" nz-dropdown>
       <nz-avatar [nzSrc]="settings.user.avatar" nzSize="small" class="mr-sm"></nz-avatar>
       {{settings.user.name}}
@@ -25,7 +25,7 @@ export class HeaderUserComponent {
     public settings: SettingsService,
     private router: Router,
     @Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService,
-  ) {}
+  ) { }
 
   logout() {
     this.tokenService.clear();

@@ -5,8 +5,6 @@ import { environment } from '@env/environment';
 import { LayoutDefaultComponent } from '../layout/default/default.component';
 import { LayoutFullScreenComponent } from '../layout/fullscreen/fullscreen.component';
 import { LayoutPassportComponent } from '../layout/passport/passport.component';
-// dashboard pages
-import { DashboardComponent } from './dashboard/dashboard.component';
 // passport pages
 import { UserLoginComponent } from './passport/login/login.component';
 import { UserRegisterComponent } from './passport/register/register.component';
@@ -24,19 +22,19 @@ const routes: Routes = [
     component: LayoutDefaultComponent,
     children: [
       { path: '', redirectTo: 'echartsdemo', pathMatch: 'full' },
-      { path: 'dashboard', component: DashboardComponent, data: { title: '仪表盘', titleI18n: 'dashboard' } },
       // 业务子模块
       // echartsdemo模块
       { path: 'echartsdemo', loadChildren: './echartsdemo/echartsdemo.module#EchartsdemoModule' }
     ]
   },
   // 全屏布局
-  // {
-  //     path: 'fullscreen',
-  //     component: LayoutFullScreenComponent,
-  //     children: [
-  //     ]
-  // },
+  {
+    path: 'fullscreen',
+    component: LayoutFullScreenComponent,
+    children: [
+      { path: '', loadChildren: './echartsdemo/echartsdemo.module#EchartsdemoModule' }
+    ]
+  },
   // passport
   {
     path: 'passport',

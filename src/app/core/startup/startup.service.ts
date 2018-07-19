@@ -63,12 +63,12 @@ export class StartupService {
     // mock
     const app: any = {
       name: `angular示例`,
-      description: `Ng-zorro admin panel front-end framework`
+      description: `这是个展示demo的项目，集成各种插件`
     };
     const user: any = {
       name: 'Admin',
       avatar: './assets/tmp/img/avatar.jpg',
-      email: 'cipchk@qq.com',
+      email: '15777777777',
       token: '123456789'
     };
     // 应用信息：包括站点名、描述、年份
@@ -83,11 +83,6 @@ export class StartupService {
         text: '主导航',
         group: true,
         children: [
-          {
-            text: '仪表盘',
-            link: '/dashboard',
-            icon: 'anticon anticon-appstore-o'
-          },
           {
             text: '堆叠区域图',
             link: '/echartsdemo',
