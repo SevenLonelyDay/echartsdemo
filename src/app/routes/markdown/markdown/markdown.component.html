@@ -1,0 +1,16 @@
+<div class="content__title">
+  <h1>markdown</h1>
+</div>
+
+<markdown ngPreserveWhitespaces>
+  # Markdown
+</markdown>
+
+<markdown [data]="doc_html | language : 'html'"></markdown>
+
+
+<markdown [data]="doc_ts | language : 'typescript'"></markdown>
+
+<markdown [data]="doc_ts | language : 'typescript' | markdown"></markdown>
+
+<markdown [src]="'./assets/README.md'"></markdown>

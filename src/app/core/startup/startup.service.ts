@@ -85,12 +85,26 @@ export class StartupService {
         children: [
           {
             text: '堆叠区域图',
-            link: '/echartsdemo',
+            link: '/echartsdemo/area',
+            reuse: true,
             icon: 'anticon anticon-appstore-o'
           },
           {
             text: '柱形和折线图',
             link: '/echartsdemo/link',
+            reuse: true,
+            icon: 'anticon anticon-appstore-o'
+          },
+          {
+            text: 'markdown',
+            link: '/markdown/md',
+            reuse: true,
+            icon: 'anticon anticon-appstore-o'
+          },
+          {
+            text: 'markdown编辑器',
+            link: '/markdown/ueditor',
+            reuse: true,
             icon: 'anticon anticon-appstore-o'
           }
         ]

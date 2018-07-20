@@ -24,7 +24,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'echartsdemo', pathMatch: 'full' },
       // 业务子模块
       // echartsdemo模块
-      { path: 'echartsdemo', loadChildren: './echartsdemo/echartsdemo.module#EchartsdemoModule' }
+      { path: 'echartsdemo', loadChildren: './echartsdemo/echartsdemo.module#EchartsdemoModule' },
+      { path: 'markdown', loadChildren: './markdown/markdown.module#MarkdownModule' }
     ]
   },
   // 全屏布局

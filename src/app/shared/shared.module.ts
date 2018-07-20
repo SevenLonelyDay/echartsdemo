@@ -12,10 +12,11 @@ import { DelonFormModule } from '@delon/form';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { CountdownModule } from 'ngx-countdown';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { MarkdownModule } from 'ngx-markdown';
 const THIRDMODULES = [
   NgZorroAntdModule,
   CountdownModule,
-  NgxEchartsModule
+  NgxEchartsModule,
 ];
 // endregion
 
@@ -34,6 +35,7 @@ const DIRECTIVES = [];
     DelonABCModule,
     DelonACLModule,
     DelonFormModule,
+    MarkdownModule.forRoot(),
     // third libs
     ...THIRDMODULES
   ],
@@ -51,6 +53,7 @@ const DIRECTIVES = [];
     DelonABCModule,
     DelonACLModule,
     DelonFormModule,
+    MarkdownModule,
     // third libs
     ...THIRDMODULES,
     // your components
