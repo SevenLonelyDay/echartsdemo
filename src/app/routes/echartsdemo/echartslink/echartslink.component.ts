@@ -13,10 +13,10 @@ export class EchartslinkComponent implements OnInit {
 
   linkoption = {
     title: {
-      text: '懒猫今日访问量'
+      text: '网站今日访问量'
     },
     color: ['#3398DB'],
-    //气泡提示框，常用于展现更详细的数据
+    // 气泡提示框，常用于展现更详细的数据
     tooltip: {
       trigger: 'axis',
       axisPointer: { // 坐标轴指示器，坐标轴触发有效
@@ -26,20 +26,20 @@ export class EchartslinkComponent implements OnInit {
     toolbox: {
       show: true,
       feature: {
-        //显示缩放按钮
+        // 显示缩放按钮
         dataZoom: {
           show: true
         },
-        //显示折线和块状图之间的切换
+        // 显示折线和块状图之间的切换
         magicType: {
           show: true,
           type: ['bar', 'line']
         },
-        //显示是否还原
+        // 显示是否还原
         restore: {
           show: true
         },
-        //是否显示图片
+        // 是否显示图片
         saveAsImage: {
           show: true
         }
@@ -63,7 +63,7 @@ export class EchartslinkComponent implements OnInit {
       },
     }],
     yAxis: [{
-      name: "懒猫今日访问量",
+      name: '网站今日访问量',
       type: 'value'
     }],
     series: [{
@@ -77,7 +77,7 @@ export class EchartslinkComponent implements OnInit {
       },
       data: [21231, 1212, 21231, 3213]
     }]
-  }
+  };
 
 
   constructor() { }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarkdownedutorComponent implements OnInit {
 
-  md_html = "### 测试文档  `npm i`"
+  md_html = '### 测试文档  `npm i`'
 
   constructor() { }
 
